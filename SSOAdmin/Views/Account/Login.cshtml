@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+@using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl }))
+{
+  
+    <input class="btn btn-primary"
+           type="submit" value="Login" />
+}
