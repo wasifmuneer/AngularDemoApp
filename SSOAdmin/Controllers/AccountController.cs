@@ -23,8 +23,8 @@ namespace SSOAdmin.Controllers
         public ActionResult Login(string username,string pass,string returnUrl)
         {
             var claims = new List<Claim>();
-            claims.Add(new Claim(ClaimTypes.Name, "Brock"));
-            claims.Add(new Claim(ClaimTypes.Email, "brockallen@gmail.com"));
+            claims.Add(new Claim(ClaimTypes.Name, "Wasif"));
+            claims.Add(new Claim(ClaimTypes.Email, "wasif.muneer@gmail.com"));
             var id = new ClaimsIdentity(claims, DefaultAuthenticationTypes.ApplicationCookie);
 
             var ctx = Request.GetOwinContext();
